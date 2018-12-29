@@ -1,0 +1,92 @@
+body {
+  background: #111;
+  background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.5)), url(bkg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fdfcfd;
+  text-align: center;
+  width: 100vw;
+  /* font-weight: 800; */
+  overflow: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+.fly {
+  font-size: 7em;
+  margin: 35vh auto;
+  height: 20vh;
+  text-transform: uppercase;
+}
+
+.fly span {
+  display: block;
+  font-size: .4em;
+  opacity: .8;
+}
+
+.fly div {
+  position: absolute;
+  margin: 2vh 0;
+  opacity: 0;
+  left: 10vw;
+  width: 80vw;
+  animation: switch 32s linear infinite;
+}
+
+@keyframes switch {
+  0% {
+    opacity: 0;
+    filter: blur(20px);
+    transform: scale(12)
+  }
+  3% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(1)
+  }
+  10% {
+    opacity: 1;
+    filter: blur(0px);
+    transform: scale(.9)
+  }
+  13% {
+    opacity: 0;
+    filter: blur(10px);
+    transform: scale(.1)
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fly div:nth-child(2) {
+  animation-delay: 4s;
+}
+
+.fly div:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.fly div:nth-child(4) {
+  animation-delay: 12s;
+}
+
+.fly div:nth-child(5) {
+  animation-delay: 16s;
+}
+
+.fly div:nth-child(6) {
+  animation-delay: 20s;
+}
+
+.fly div:nth-child(7) {
+  animation-delay: 24s;
+}
+
+.fly div:nth-child(8) {
+  animation-delay: 28s;
+}
